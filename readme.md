@@ -12,7 +12,7 @@ This program was written for python 2.7.10, but now has python 3 support! It sho
 
 ### **Install**
 
-If you are running windows, download the latest release (https://github.com/BrachystochroneSD/AnnouncementWindow/releases) and unzip the folder anywhere on your computer. Click *AnnouncementWindow.exe* to launch.
+If you are running windows, download the latest release (https://github.com/dgomiller/AnnouncementWindow/releases) and unzip the folder anywhere on your computer. Click *AnnouncementWindow.exe* to launch.
 
 If you are not on windows, or just want to run the code directly, you will need to have python installed on your computer. Download the repository. The program is launched by running the script *run.py*.
 
@@ -85,7 +85,7 @@ When the program is opened, this option will load all announcements in *gamelog.
 
 * ```save_hidden_announcements```: 
 
-If you set this to ```True``` it tell the program to save all announcements, even if they are not shown in the window. This would use more memory (especially if you are hiding tons of announcement spam) and a bit more CPU power, but allows you to see all past announcements that have not been printed to the window. For example, if this option is enabled, after your fortress has been turned into a lake of dwarf blood by some megabeast, you could enable all combat announcements (if they were previously disabled) to see a play by play of how they all fought and died. Otherwise, those previously hidden announcements will not show up once you you enable their visibility.
+If you set this to ```True``` it tells the program to save all announcements, even if they are not shown in the window. This would use more memory (especially if you are hiding tons of announcement spam) and a bit more CPU power, but allows you to see all past announcements that have not been printed to the window. For example, if this option is enabled, after your fortress has been turned into a lake of dwarf blood by some megabeast, you could enable all combat announcements (if they were previously disabled) to see a play by play of how they all fought and died. Otherwise, those previously hidden announcements will not show up once you you enable their visibility.
 
 * ```trim_announcements_[window number]``` 
 
