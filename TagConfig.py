@@ -156,14 +156,14 @@ class CategoryBar(Tkinter.Frame):
         self.expand_button.grid(row=0, column=0, sticky='w')
 
         # row frame (category name + window toggles)
-        row_frame = Tkinter.Frame(self, background="gray")
+        row_frame = Tkinter.Frame(self, background="lightgray")
 
         label = Tkinter.Label(
             row_frame,
             text=getattr(self.category, "category", ""),
             anchor="w",
             width=15,
-            background='gray'
+            background='lightgray'
         )
         label.grid(row=0, column=0, sticky="w")
 
@@ -248,12 +248,20 @@ class GroupBar(Tkinter.Frame):
         label.grid(row=0, column=0)
 
         # Color chooser for the group color if supported by model
+
+        # Get current group color (defaults to gray if not set)
+        current_color = getattr(self.group, "color", "#808080")
+
         self.color_button = Tkinter.Button(
             header,
             text="Color",
             command=self.set_color,
-            background=getattr(self.group, "color", "#808080")
+            fg=current_color,                # text color = chosen color
+            bg="black",                      # background fixed to black
+            activeforeground=current_color,  # keep same text color when active
+            activebackground="black",        # keep black bg when active
         )
+
         self.color_button.grid(row=0, column=1)
 
         header.grid(row=0, column=1, sticky="w")
@@ -281,7 +289,7 @@ class GroupBar(Tkinter.Frame):
 
         if first_cat and isinstance(getattr(first_cat, "show", {}), dict):
             for window in sorted(first_cat.show.keys()):
-                win_frame = Tkinter.Frame(gridrow, width=24, height=21)
+                win_frame = Tkinter.Frame(gridrow, width=18, height=21)
                 win_frame.pack_propagate(0)
                 Tkinter.Label(win_frame, text=str(window).rjust(3), anchor="w", background="gray").pack(fill="both", expand=True)
                 win_frame.grid(row=0, column=col_)
@@ -301,21 +309,29 @@ class GroupBar(Tkinter.Frame):
             cbar.grid(row=row_, column=0, sticky="w")
             row_ += 1
 
+    
     def set_color(self):
-        """
-        Choose a new group color and assign it via the model.
-        """
         new_color = tkColorChooser.askcolor(parent=self)[1]
         if new_color is not None:
-            self.color_button.config(background=new_color)
             try:
-                # If model supports setting color
+                # Persist to your model
                 if hasattr(self.group, "set_color"):
                     self.group.set_color(new_color)
                 else:
                     self.group.color = new_color
+
+                # Re-style the button: text = chosen color, background = black
+                self.color_button.config(
+                    fg=new_color,
+                    bg="black",
+                    activeforeground=new_color,
+                    activebackground="black",
+                )
+
+                # If you mark UI dirty for saving, keep that line here
                 global FILTERS_DIRTY
                 FILTERS_DIRTY = True
+
             except Exception:
                 pass
 

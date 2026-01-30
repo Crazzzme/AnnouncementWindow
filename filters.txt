@@ -25,7 +25,7 @@
 ## (http://df.zweistein.cz/soundsense/)                                       ##
 ################################################################################
 
-#battle_minor is mostly stuff that shows up when dwarfs train
+# battle_minor is mostly stuff that shows up when dwarfs train
 
 [battle_minor][hitevents_miss] "The (.+), lightly tapping the target!"
 [battle_minor][hitevents_miss] "The (.+), but the attack glances away!"
@@ -38,7 +38,6 @@
 [battle_minor][hitevents_miss] "The flying (.+) misses (.+)!"
 [battle_minor][hitevents_miss] "(.+) blocks The flying (.+)!"
 [battle_minor][hitevents_miss] "The (.+) misses The (.+)!"
-
 [battle_minor][hitevents_miss] "(.+), but the attack is deflected by the (.+)'s (.+)!"
 [battle_minor][hitevents_miss] "(.+), but it is deflected by the (.+)'s (.+)!"
 [battle_minor][hitevents_miss] "The (.+) strikes at the (.+) but the shot is parried!"
@@ -56,6 +55,7 @@
 [battle_minor][status] "The (.+) collapses and falls to the ground from over-exertion\."
 [battle_minor][status] "The (.+) looks surprised by the ferocity of ((The (.+)'s)|(Your)) onslaught!"
 [battle_minor][status] "The (.+) is ripped to shreds!"
+[battle_minor][status] "The (.+) gains possession of the (.+)\."
 
 [battle_minor][block_dodge] "The (.+) (blocks|jumps away|jumps out|scrambles out of|scrambles away|rolls out of|rolls away|falls over).+"
 [battle_minor][block_dodge] "(((.+) jumps)|(You jump)) away from The flying (.+)!"
@@ -156,7 +156,6 @@
 [battle][battle] "(.+) latches on firmly to (.+)!"
 [battle][battle] "(.+) bends (.+) and (.+) collapses!"
 [battle][battle] "The (.+) takes The (.+) down by the (.+) with The (.+)'s (.+)!"
-
 [battle][battle] "The (.+) locks The (.+)'s (.+) with the (.+)'s (.+)!"
 [battle][battle] "The (.+) adjusts the grip of the (.+) on the (.+)\."
 [battle][battle] "The (.+) releases the grip of the (.+)'s (.+) from the (.+)'s (.+)\."
@@ -172,7 +171,6 @@
 [battle][battle] "The (.+) shakes the (.+) around by the (.+)!"
 [battle][battle] "The (.+) is ripped away and remains in the (.+)'s grip!"
 [battle][battle] "The (.+) takes the (.+) down by the (.+) with the (.+)'s (.+)!"
-
 [battle][battle] "The (.+) skids along the ground through the (.+)!"
 [battle][battle] "(.+) cancels (.+): Too injured\."
 [battle][battle] "The (.+) attack is interrupted!"
@@ -200,6 +198,7 @@
 [battle][gore] "An (.+) has been opened by the strike and a (.+) has been torn!"
 [battle][gore] "The (.+) has lodged firmly in the wound!"
 [battle][gore] "(.+) twists the embedded (.+) around in (.+)'s (.+)!"
+[battle][gore] "The force (twists|pulls) the (.+)!"
 [battle][gore] "(.+) pulls on the embedded (.+)\."
 [battle][gore] "(.+) pulls out and releases the (.+)\."
 [battle][gore] "((An artery)|(A major artery)) has been opened by the ((strike)|(attack))(.*)!"
@@ -214,6 +213,7 @@
 [battle][gore] "The (.+) is smashed into the (.+), an unrecognizable mass!"
 [battle][gore] "(.+) in the (.+) with (.+) and the injured part is cloven asunder!"
 [battle][gore] "(.+) blood is sucked out of the wound!"
+[battle][gore] "A (.+) as been (.+) and a (.+) has been (.+)!"
 
 [battle][strikes] "The (.+) (leaps at|punches|catches|snatches at|stabs|grabs|hacks|pushes|misses|slashes|shakes|blocks|gores|strangles|strikes|scratches|kicks|attacks|lashes|slaps|bashes|bites|strikes at|punches|releases|throws|takes|locks|bends|places a chokehold on|gouges) The (.+)"
 [battle][strikes] "The (.+) (leaps at|punches|catches|snatches at|stabs|grabs|hacks|pushes|misses|slashes|shakes|blocks|gores|strangles|strikes|scratches|kicks|attacks|lashes|slaps|bashes|bites|strikes at|punches|releases|throws|takes|locks|bends|places a chokehold on|gouges) the (.+)"
@@ -233,41 +233,44 @@
 
 [Production][EquipmentMismatch] "(.+) cancels Pickup Equipment: Equipment mismatch\."
 
-[Production][foodAndDrinkCancelations] "(.+) cancels Drink: Water source vanished\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Drink: Well dry\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Fill Waterskin Well dry\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Fill Waterskin: Water source vanished\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Clean Self Well dry\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Drink: Water source contaminated\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Give Water: No water source\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Apply Cast: No water source\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Clean Patient: No water source\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Place In Traction: No available traction bench\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Fill Pond: No water source\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Give Water: Need empty bucket\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Give Water: Animal inaccessible\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Clean Self: Water source vanished\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Clean Self: Well dry\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Give Food: No food available\."
-[Production][foodAndDrinkCancelations] "(.+) cancels (.+): Hunting vermin for food\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Eat: Item inaccessible\."
-[Production][foodAndDrinkCancelations] "(.+) cancels (.+): Getting food\."
-[Production][foodAndDrinkCancelations] "(.+) cancels (.+): Getting something to drink\."
-[Production][foodAndDrinkCancelations] "(.+) cancels (.+): Getting water\."
-[Production][foodAndDrinkCancelations] "(.+) cancels Tame (.+): No food available\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Drink: Water source vanished\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Drink: Well dry\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Fill Waterskin Well dry\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Fill Waterskin: Water source vanished\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Clean Self Well dry\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Drink: Water source contaminated\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Give Water: No water source\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Apply Cast: No water source\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Clean Patient: No water source\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Place In Traction: No available traction bench\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Fill Pond: No water source\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Give Water: Need empty bucket\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Give Water: Animal inaccessible\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Clean Self: Water source vanished\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Clean Self: Well dry\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Give Food: No food available\."
+[Production][foodAndDrinkCancellations] "(.+) cancels (.+): Hunting vermin for food\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Eat: Item inaccessible\."
+[Production][foodAndDrinkCancellations] "(.+) cancels (.+): Getting food\."
+[Production][foodAndDrinkCancellations] "(.+) cancels (.+): Getting something to drink\."
+[Production][foodAndDrinkCancellations] "(.+) cancels (.+): Getting water\."
+[Production][foodAndDrinkCancellations] "(.+) cancels Tame (.+): No food available\."
 
 [Production][creatureInterruption] "(.+) cancels (.+): Interrupted by (.+)\."
 
+[Production][production] "Jobs removed from (.+)\."
 [Production][production] "Jobs removed from unpowered Magma Forge\."
 [Production][production] "Jobs removed from unpowered Magma Smelter\."
 [Production][production] "(.+) has altered the prices of goods\."
 [Production][production] "(.+) has been completed\."
+[Production][production] "(.+) was built\."
 
-[Production][farmCancelations] "(.+), (.+) cancels Plant Seeds: (.+)"
+[Production][farmCancellations] "(.+), (.+) cancels Plant Seeds: (.+)"
 
-[Production][misc] "(.+) cancels (.+): (.+)"
+[Production][cancellations] "(.+) cancels (.+): (.+)"
+[Production][cancellations] "The (.+) were unable to complete the (.+)\."
 
-[Production][cancelations] "The (.+) were unable to complete the (.+)\."
+[Production][dfhack_automation] "Marked \d+ items (to|for) (.+)"
 
 [misc][spam] "x\d+"
 [misc][spam] "\s+"
@@ -310,28 +313,6 @@
 
 [deaths][slaughtering] "(.+) has been slaughtered\."
 
-[dfhack][elected] "(.+), (.+) has been re-elected\."
-[dfhack][elected] "(.+) has been elected mayor\."
-[dfhack][elected] "(.+) became mayor\."
-[dfhack][elected] "Mayor position is now vacant\."
-[dfhack][elected] "Expedition leader was replaced by mayor\."
-[dfhack][elected] "(.+) became expedition leader\."
-[dfhack][elected] "Expedition leader position is now vacant\."
-
-[dfhack][misc] "Siege was broken\."
-[dfhack][misc] "(.+) is now rusty (.+)\."
-[dfhack][misc] "(.+) is now very rusty (.+)\."
-[dfhack][misc] "(.+) is no longer rusty (.+)\."
-[dfhack][misc] "(.+) is no longer very rusty (.+)\."
-[dfhack][misc] "(.+) has became Proficient (.+)\."
-[dfhack][misc] "(.+) has became Accomplished (.+)\."
-[dfhack][misc] "(.+) has became Legendary (.+)\."
-[dfhack][misc] "(.+): I have mastered (.+)\.  That was very satisfying!"
-
-[dfhack][workshopCompletion] "(.+) was built\."
-
-[dfhack][automation] "Marked \d+ items (to|for) (.+)"
-
 [fishing][] "There is nothing to catch in the (.+)\."
 
 [interactions][necromancy] "(.+) gestures!"
@@ -359,6 +340,10 @@
 [intruders][intruders] "(.+) batters (.+)!"
 [intruders][intruders] "(.+) destroyed by (.+)\."
 [intruders][intruders] "(.+) toppled by (.+)\."
+[intruders][intruders] "An ambush!(.+)"
+[intruders][intruders] "An army is invading!(.+)"
+[intruders][intruders] "(.+) was spotted sneaking around! (.+)"
+[intruders][intruders] "Siege was broken\."
 
 [intruders][ghost] "(.+) has risen and is haunting the fortress!"
 [intruders][ghost] "(.+) can be heard howling throughout the fortress!"
@@ -384,14 +369,17 @@
 
 [mining][mining] "You have struck (.+)!"
 [mining][mining] "Raw adamantine!  Praise the miners!"
-[mining][mining] "You have discovered an expansive cavern deep underground\."
-[mining][mining] "You have discovered an eerie cavern\.  The air above the dark stone floor is alive with vortices of purple light and dark, boiling clouds\.  Seemingly bottomless glowing pits mark the surface\."
-[mining][mining] "Horrifying screams come from the darkness below!"
-[mining][mining] "You have discovered a (.+)"
-[mining][mining] "Digging designation cancelled: damp stone located\."
-[mining][mining] "Digging designation cancelled: warm stone located\."
-[mining][mining] "A section of the cavern has collapsed!"
-[mining][mining] "Something has collapsed on the surface!"
+
+[mining][cancellation] "Digging designation cancelled: damp stone located\."
+[mining][cancellation] "Digging designation cancelled: warm stone located\."
+
+[mining][collapse] "A section of the cavern has collapsed!"
+[mining][collapse] "Something has collapsed on the surface!"
+
+[mining][events] "You have discovered a (.+)"
+[mining][events] "You have discovered an expansive cavern deep underground\."
+[mining][events] "You have discovered an eerie cavern\.  The air above the dark stone floor is alive with vortices of purple light and dark, boiling clouds\.  Seemingly bottomless glowing pits mark the surface\."
+[mining][events] "Horrifying screams come from the darkness below!"
 
 [moods][moods] "(.+) cancels (.+): Taken by mood\."
 [moods][moods] "(.+) is taken by a fey mood!"
@@ -438,27 +426,64 @@
 
 [animals][catAdoption] "(.+) has adopted (.+)\."
 
-[social][missing] "(.+) has been missing for a week\."
+[missing][missing] "(.+) has been missing for a week\."
 
-[social][social] "The (.+) and the (.+) have married\.  Congratulations!"
-[social][social] "They have organized a wedding reception at (.+)\."
-[social][social] "They have decided to forego any formal celebrations\."
-[social][social] "(.+) has organized a party at (.+)\."
-[social][social] "(.+) has given birth to a boy\."
-[social][social] "(.+) has given birth to a girl\."
-[social][social] "(.+) has given birth to ((twins)|(triplets))\."
-[social][social] "(.+) cancels (.+): Seeking Infant\."
-[social][social] "(.+) cancels Seek Infant: Infant inaccessible\."
-[social][social] "(.+) has grown to become a ((Dwarven )?)Child\."
-[social][social] "(.+) has grown to become a (.+)\."
-[social][social] "(.+) is more experienced\."
-[social][social] "(.+) has become a expedition leader\."
-[social][social] "(.+) has become a militia commander\."
-[social][social] "(.+) and the surrounding lands have been made a barony\."
-[social][social] "(.+) and the surrounding lands have been made a county\."
-[social][social] "(.+) and the surrounding lands have been made a duchy\."
-[social][social] "(.+), a (.+) guild, has been established\."
-[social][social] "(.+), being the rightful heir, has inherited the position of ((king)|(queen)) of The (.+)\."
+[life_events][social] "The (.+) and the (.+) have married\.  Congratulations!"
+[life_events][social] "They have organized a wedding reception at (.+)\."
+[life_events][social] "They have decided to forego any formal celebrations\."
+[life_events][social] "(.+) has organized a party at (.+)\."
+
+[life_events][birth] "(.+) has given birth to a boy\."
+[life_events][birth] "(.+) has given birth to a girl\."
+[life_events][birth] "(.+) has given birth to ((twins)|(triplets))\."
+
+[life_events][growth] "(.+) has grown to become a ((Dwarven )?)Child\."
+[life_events][growth] "(.+) has grown to become a (.+)\."
+
+[life_events][parenting] "(.+) cancels (.+): Seeking Infant\."
+[life_events][parenting] "(.+) cancels Seek Infant: Infant inaccessible\."
+
+[life_events][skills] "(.+) is more experienced\."
+[life_events][skills] "(.+) is now rusty (.+)\."
+[life_events][skills] "(.+) is now very rusty (.+)\."
+[life_events][skills] "(.+) is no longer rusty (.+)\."
+[life_events][skills] "(.+) is no longer very rusty (.+)\."
+[life_events][skills] "(.+) has became Proficient (.+)\."
+[life_events][skills] "(.+) has became Accomplished (.+)\."
+[life_events][skills] "(.+) has became Legendary (.+)\."
+[life_events][skills] "(.+): I have mastered (.+)\.  That was very satisfying!"
+
+[government][title] "(.+) has become a expedition leader\."
+[government][title] "(.+) has become a militia commander\."
+[government][title] "(.+), being the rightful heir, has inherited the position of ((king)|(queen)) of The (.+)\."
+[government][title] "(.+) became mayor\."
+[government][title] "Expedition leader was replaced by mayor\."
+[government][title] "(.+) became expedition leader\."
+
+[government][elected] "(.+), (.+) has been re-elected\."
+[government][elected] "(.+) has been elected mayor\."
+[government][elected] "Mayor position is now vacant\."
+[government][elected] "Expedition leader position is now vacant\."
+
+[government][dwarfhome] "(.+) and the surrounding lands have been made a barony\."
+[government][dwarfhome] "(.+) and the surrounding lands have been made a county\."
+[government][dwarfhome] "(.+) and the surrounding lands have been made a duchy\."
+[government][dwarfhome] "(.+), a (.+) guild, has been established\."
+
+[government][world_age_change] "The world has passed into (.+)\."
+
+[petition][guildhall] "The guildhall agreement with (.+) has been satisfied\."
+
+[petition][temple] "The priesthood of (.+) is ready to be recognized(.+)"
+
+[petition][visitors] "The residency petition of (.+) has been ignored\."
+
+[visitors][visit] "(.+) is visiting\."
+
+[visitors][conversation] "(.+) has revealed the presence of (.+) to (.+)\."
+[visitors][conversation] "(.+) has shared many tales from beyond (.+)\."
+[visitors][conversation] "(.+) has shared a few rumors\."
+[visitors][conversation] "(.+) has shared a rumor from abroad\."
 
 [profession][professionChange] "(.+) has become a (.+)\."
 

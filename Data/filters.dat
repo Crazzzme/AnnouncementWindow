@@ -1,574 +1,676 @@
 {
     "battle_minor": {
-        "color": "#c0c0c0", 
-        "group": "battle_minor", 
+        "group": "battle_minor",
+        "color": "#c0c0c0",
         "categories": {
             "hitevents_miss": {
-                "category": "hitevents_miss", 
+                "category": "hitevents_miss",
                 "show": {
-                    "0": false, 
+                    "0": true,
                     "1": false
                 }
-            }, 
+            },
             "status": {
-                "category": "status", 
+                "category": "status",
                 "show": {
-                    "0": false, 
+                    "0": true,
                     "1": false
                 }
-            }, 
+            },
             "block_dodge": {
-                "category": "block_dodge", 
+                "category": "block_dodge",
                 "show": {
-                    "0": false, 
+                    "0": true,
                     "1": false
                 }
             }
         }
-    }, 
+    },
     "battle": {
-        "color": "#ff0000", 
-        "group": "battle", 
+        "group": "battle",
+        "color": "#ff0000",
         "categories": {
             "hitevents": {
-                "category": "hitevents", 
+                "category": "hitevents",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": false
                 }
-            }, 
+            },
             "status": {
-                "category": "status", 
+                "category": "status",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": false
                 }
-            }, 
+            },
             "battle": {
-                "category": "battle", 
+                "category": "battle",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": false
                 }
-            }, 
+            },
             "breath": {
-                "category": "breath", 
+                "category": "breath",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": false
                 }
-            }, 
+            },
             "gore": {
-                "category": "gore", 
+                "category": "gore",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": false
                 }
-            }, 
+            },
             "strikes": {
-                "category": "strikes", 
+                "category": "strikes",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": false
                 }
             }
         }
-    }, 
+    },
     "battle_trance": {
-        "color": "#ff00ff", 
-        "group": "battle_trance", 
+        "group": "battle_trance",
+        "color": "#ff00ff",
         "categories": {
             "trance": {
-                "category": "trance", 
+                "category": "trance",
                 "show": {
-                    "0": true, 
-                    "1": true
+                    "0": true,
+                    "1": false
                 }
             }
         }
-    }, 
+    },
     "JobSuspension": {
-        "color": "#c60000", 
-        "group": "JobSuspension", 
+        "group": "JobSuspension",
+        "color": "#c60000",
         "categories": {
             "JobSuspension": {
-                "category": "JobSuspension", 
+                "category": "JobSuspension",
                 "show": {
-                    "0": true, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "Production": {
-        "color": "#930000", 
-        "group": "Production", 
+        "group": "Production",
+        "color": "#930000",
         "categories": {
             "EquipmentMismatch": {
-                "category": "EquipmentMismatch", 
+                "category": "EquipmentMismatch",
                 "show": {
-                    "0": true, 
-                    "1": false
-                }
-            }, 
-            "foodAndDrinkCancelations": {
-                "category": "foodAndDrinkCancelations", 
-                "show": {
-                    "0": true, 
-                    "1": false
-                }
-            }, 
-            "creatureInterruption": {
-                "category": "creatureInterruption", 
-                "show": {
-                    "0": true, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
+            "foodAndDrinkCancellations": {
+                "category": "foodAndDrinkCancellations",
+                "show": {
+                    "0": false,
+                    "1": false
+                }
+            },
+            "creatureInterruption": {
+                "category": "creatureInterruption",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
             "production": {
-                "category": "production", 
+                "category": "production",
                 "show": {
-                    "0": true, 
+                    "0": false,
+                    "1": true
+                }
+            },
+            "farmCancellations": {
+                "category": "farmCancellations",
+                "show": {
+                    "0": false,
                     "1": false
                 }
-            }, 
-            "farmCancelations": {
-                "category": "farmCancelations", 
+            },
+            "cancellations": {
+                "category": "cancellations",
                 "show": {
-                    "0": true, 
-                    "1": false
+                    "0": false,
+                    "1": true
                 }
-            }, 
-            "misc": {
-                "category": "misc", 
+            },
+            "dfhack_automation": {
+                "category": "dfhack_automation",
                 "show": {
-                    "0": true, 
-                    "1": false
-                }
-            }, 
-            "cancelations": {
-                "category": "cancelations", 
-                "show": {
-                    "0": true, 
-                    "1": false
+                    "0": false,
+                    "1": true
                 }
             }
         }
-    }, 
+    },
     "misc": {
-        "color": "#FFF", 
-        "group": "misc", 
+        "group": "misc",
+        "color": "#ffffff",
         "categories": {
             "spam": {
-                "category": "spam", 
+                "category": "spam",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": false
                 }
             }
         }
-    }, 
+    },
     "masterpiece": {
-        "color": "#0080c0", 
-        "group": "masterpiece", 
+        "group": "masterpiece",
+        "color": "#0080c0",
         "categories": {
             "Other/All": {
-                "category": "Other/All", 
+                "category": "Other/All",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "beekeeping": {
-        "color": "#ffff80", 
-        "group": "beekeeping", 
+        "group": "beekeeping",
+        "color": "#ffff80",
         "categories": {
             "beekeeping": {
-                "category": "beekeeping", 
+                "category": "beekeeping",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "deaths": {
-        "color": "#ffff00", 
-        "group": "deaths", 
+        "group": "deaths",
+        "color": "#ffff00",
         "categories": {
             "directDeaths": {
-                "category": "directDeaths", 
+                "category": "directDeaths",
                 "show": {
-                    "0": true, 
-                    "1": true
+                    "0": true,
+                    "1": false
                 }
-            }, 
+            },
             "foundDeaths": {
-                "category": "foundDeaths", 
+                "category": "foundDeaths",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
-            }, 
+            },
             "slaughtering": {
-                "category": "slaughtering", 
+                "category": "slaughtering",
                 "show": {
-                    "0": true, 
-                    "1": true
+                    "0": false,
+                    "1": false
                 }
             }
         }
-    }, 
-    "dfhack": {
-        "color": "#ffffff", 
-        "group": "dfhack", 
-        "categories": {
-            "elected": {
-                "category": "elected", 
-                "show": {
-                    "0": false, 
-                    "1": true
-                }
-            }, 
-            "misc": {
-                "category": "misc", 
-                "show": {
-                    "0": false, 
-                    "1": true
-                }
-            }, 
-            "workshopCompletion": {
-                "category": "workshopCompletion", 
-                "show": {
-                    "0": false, 
-                    "1": true
-                }
-            }, 
-            "automation": {
-                "category": "automation", 
-                "show": {
-                    "0": false, 
-                    "1": true
-                }
-            }
-        }
-    }, 
+    },
     "fishing": {
-        "color": "#0000ff", 
-        "group": "fishing", 
+        "group": "fishing",
+        "color": "#0000ff",
         "categories": {
             "Other/All": {
-                "category": "Other/All", 
+                "category": "Other/All",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "interactions": {
-        "color": "#ff0000", 
-        "group": "interactions", 
+        "group": "interactions",
+        "color": "#ff0000",
         "categories": {
             "necromancy": {
-                "category": "necromancy", 
+                "category": "necromancy",
                 "show": {
-                    "0": true, 
-                    "1": true
+                    "0": true,
+                    "1": false
                 }
-            }, 
+            },
             "werebeast": {
-                "category": "werebeast", 
+                "category": "werebeast",
                 "show": {
-                    "0": true, 
-                    "1": true
+                    "0": true,
+                    "1": false
                 }
             }
         }
-    }, 
+    },
     "intruders": {
-        "color": "#ff0000", 
-        "group": "intruders", 
+        "group": "intruders",
+        "color": "#ff0000",
         "categories": {
             "beast": {
-                "category": "beast", 
+                "category": "beast",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
-            }, 
+            },
             "intruders": {
-                "category": "intruders", 
+                "category": "intruders",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
-            }, 
+            },
             "ghost": {
-                "category": "ghost", 
+                "category": "ghost",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "mandates": {
-        "color": "#ffffff", 
-        "group": "mandates", 
+        "group": "mandates",
+        "color": "#ffffff",
         "categories": {
             "mandates": {
-                "category": "mandates", 
+                "category": "mandates",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "mining": {
-        "color": "#80ffff", 
-        "group": "mining", 
+        "group": "mining",
+        "color": "#80ffff",
         "categories": {
             "enviromentalHazard": {
-                "category": "enviromentalHazard", 
+                "category": "enviromentalHazard",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "mining": {
-                "category": "mining", 
+                "category": "mining",
                 "show": {
-                    "0": false, 
+                    "0": false,
+                    "1": true
+                }
+            },
+            "cancellation": {
+                "category": "cancellation",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "collapse": {
+                "category": "collapse",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "events": {
+                "category": "events",
+                "show": {
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "moods": {
-        "color": "#ff00ff", 
-        "group": "moods", 
+        "group": "moods",
+        "color": "#ff00ff",
         "categories": {
             "moods": {
-                "category": "moods", 
+                "category": "moods",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "depression": {
-                "category": "depression", 
+                "category": "depression",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "tantrum": {
-                "category": "tantrum", 
+                "category": "tantrum",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "named_item": {
-        "color": "#00ffff", 
-        "group": "named_item", 
+        "group": "named_item",
+        "color": "#00ffff",
         "categories": {
             "Other/All": {
-                "category": "Other/All", 
+                "category": "Other/All",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "animals": {
-        "color": "#00ff40", 
-        "group": "animals", 
+        "group": "animals",
+        "color": "#00ff40",
         "categories": {
             "training": {
-                "category": "training", 
+                "category": "training",
                 "show": {
-                    "0": false, 
-                    "1": true
+                    "0": false,
+                    "1": false
                 }
-            }, 
+            },
             "vermin": {
-                "category": "vermin", 
+                "category": "vermin",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "grown": {
-                "category": "grown", 
+                "category": "grown",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "birth": {
-                "category": "birth", 
+                "category": "birth",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "drink": {
-                "category": "drink", 
+                "category": "drink",
                 "show": {
-                    "0": true, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "catAdoption": {
-                "category": "catAdoption", 
+                "category": "catAdoption",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
-    "social": {
-        "color": "#80ff00", 
-        "group": "social", 
+    },
+    "missing": {
+        "group": "missing",
+        "color": "#ffff00",
         "categories": {
             "missing": {
-                "category": "missing", 
+                "category": "missing",
                 "show": {
-                    "0": true, 
+                    "0": true,
+                    "1": false
+                }
+            }
+        }
+    },
+    "life_events": {
+        "group": "life_events",
+        "color": "#80ff00",
+        "categories": {
+            "social": {
+                "category": "social",
+                "show": {
+                    "0": false,
                     "1": true
                 }
-            }, 
-            "social": {
-                "category": "social", 
+            },
+            "birth": {
+                "category": "birth",
                 "show": {
-                    "0": false, 
+                    "0": false,
+                    "1": true
+                }
+            },
+            "growth": {
+                "category": "growth",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "parenting": {
+                "category": "parenting",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "skills": {
+                "category": "skills",
+                "show": {
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
+    "government": {
+        "group": "government",
+        "color": "#80ff00",
+        "categories": {
+            "title": {
+                "category": "title",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "elected": {
+                "category": "elected",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "dwarfhome": {
+                "category": "dwarfhome",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "world_age_change": {
+                "category": "world_age_change",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            }
+        }
+    },
+    "petition": {
+        "group": "petition",
+        "color": "#8080c0",
+        "categories": {
+            "guildhall": {
+                "category": "guildhall",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "temple": {
+                "category": "temple",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "visitors": {
+                "category": "visitors",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            }
+        }
+    },
+    "visitors": {
+        "group": "visitors",
+        "color": "#ff80c0",
+        "categories": {
+            "visit": {
+                "category": "visit",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            },
+            "conversation": {
+                "category": "conversation",
+                "show": {
+                    "0": false,
+                    "1": true
+                }
+            }
+        }
+    },
     "profession": {
-        "color": "#c0c0c0", 
-        "group": "profession", 
+        "group": "profession",
+        "color": "#c0c0c0",
         "categories": {
             "professionChange": {
-                "category": "professionChange", 
+                "category": "professionChange",
                 "show": {
-                    "0": true, 
+                    "0": false,
                     "1": false
                 }
             }
         }
-    }, 
+    },
     "migrants": {
-        "color": "#954a4a", 
-        "group": "migrants", 
+        "group": "migrants",
+        "color": "#954a4a",
         "categories": {
             "migrants": {
-                "category": "migrants", 
+                "category": "migrants",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "seasons": {
-        "color": "#ffff80", 
-        "group": "seasons", 
+        "group": "seasons",
+        "color": "#ffff80",
         "categories": {
             "seasons": {
-                "category": "seasons", 
+                "category": "seasons",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "weather": {
-        "color": "#ffffff", 
-        "group": "weather", 
+        "group": "weather",
+        "color": "#ffffff",
         "categories": {
             "weather": {
-                "category": "weather", 
+                "category": "weather",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "trading": {
-        "color": "#80ff80", 
-        "group": "trading", 
+        "group": "trading",
+        "color": "#80ff80",
         "categories": {
             "trading": {
-                "category": "trading", 
+                "category": "trading",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "system": {
-        "color": "#808080", 
-        "group": "system", 
+        "group": "system",
+        "color": "#808080",
         "categories": {
             "seed": {
-                "category": "seed", 
+                "category": "seed",
                 "show": {
-                    "0": false, 
-                    "1": true
+                    "0": false,
+                    "1": false
                 }
-            }, 
+            },
             "system": {
-                "category": "system", 
+                "category": "system",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
-            }, 
+            },
             "load": {
-                "category": "load", 
+                "category": "load",
                 "show": {
-                    "0": false, 
+                    "0": false,
                     "1": true
                 }
             }
         }
-    }, 
+    },
     "emotion": {
-        "color": "#804000", 
-        "group": "emotion", 
+        "group": "emotion",
+        "color": "#804000",
         "categories": {
             "emotion": {
-                "category": "emotion", 
+                "category": "emotion",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": false
                 }
             }
         }
-    }, 
+    },
     "UNKNOWN": {
-        "color": "#FF0", 
-        "group": "UNKNOWN", 
+        "group": "UNKNOWN",
+        "color": "#ff8040",
         "categories": {
             "unmatchedString": {
-                "category": "unmatchedString", 
+                "category": "unmatchedString",
                 "show": {
-                    "0": true, 
+                    "0": true,
                     "1": true
                 }
             }
