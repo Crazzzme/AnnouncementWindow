@@ -52,9 +52,17 @@ class announcement_window(Tkinter.Frame):
         except:
             title = "Window %d" % self.id
             
-        self.title_label = Tkinter.Label(self, text=title, bg="gray", fg="white", font=("Helvetica", 10, "bold"))
-        self.title_label.pack(side="top", fill="x")
+        self.header_frame = Tkinter.Frame(self, bg="gray")
+        self.header_frame.pack(side="top", fill="x")
+
+        # Title Label (Left)
+        self.title_label = Tkinter.Label(self.header_frame, text=title, bg="gray", fg="white", font=("Helvetica", 10, "bold"))
+        self.title_label.pack(side="left")
         self.title_label.bind("<Double-Button-1>", self.edit_title)
+
+        # ID Label (Right of Title)
+        self.id_label = Tkinter.Label(self.header_frame, text="[%d]" % self.id, bg="gray", fg="lightgray", font=("Helvetica", 8, "bold"))
+        self.id_label.pack(side="left", padx=10)
 
         self.text = Tkinter.Text(self, bg="black", wrap="word", font=self.customFont)
         self.vsb = Tkinter.Scrollbar(self, orient="vertical", command=self.text.yview)

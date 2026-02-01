@@ -115,6 +115,15 @@ class config(object):
                     self.word_color_dict[color_name]=fg_bg
 
     def save(self):
+        # Sync in-memory lists back to parser specific sections
+        if hasattr(self, 'window_titles'):
+            for i, title in enumerate(self.window_titles):
+                self.parser.set("Settings", 'window_title_%d' % i, str(title))
+
+        if hasattr(self, 'trim_announcements'):
+            for i, val in enumerate(self.trim_announcements):
+                self.parser.set("Settings", 'trim_announcements_%d' % i, str(val))
+
         with open(self.filepath, 'w') as fi:
             self.parser.write(fi)
 
